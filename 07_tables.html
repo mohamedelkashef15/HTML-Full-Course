@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- 
+    الـ Tables بتستخدم لعرض البيانات في شكل منظم، عن طريق Rows و Columns.
+
+مثلاً: 
+
+بيانات الطلاب
+أسعار المنتجات
+درجات الطلاب
+مواعيد المحاضرات
+    
+    -->
+    <!-- 
+    <table>  → إنشاء Table
+    <tr>     → Table Row
+    <td>     → Table Data
+    <thead>  → Table Header Section
+    <th>     → Table Header
+    <tbody>  → Table Body
+    <tfoot>  → Table Footer
+    colspan  → دمج Columns
+    rowspan  → دمج Rows
+-->
+    <h1>Tables</h1>
+
+    <table border="1" width="30%">
+      <!-- Row 1 -->
+      <tr>
+        <td>Student ID</td>
+        <td>Name</td>
+        <td>GPA</td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td>1</td>
+        <td>Mohamed</td>
+        <td>3.2</td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td>2</td>
+        <td>Ahmed</td>
+        <td>3.4</td>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td>3</td>
+        <td>Mostafa</td>
+        <td>2.1</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+
+    <table border="1" width="30%">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mohamed</td>
+          <td>3.2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ahmed</td>
+          <td>3.4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mostafa</td>
+          <td>2.1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Students</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+
+    <table border="1" width="30%">
+      <tr>
+        <td rowspan="2">Skills</td>
+        <td>HTML</td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+      </tr>
+    </table>
+  </body>
+</html>
