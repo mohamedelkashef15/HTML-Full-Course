@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <!-- 
+      - <audio>: Used to embed audio files in a web page.
+      - src: Specifies the path to the audio file.
+      - controls: Displays audio controls, such as play, pause, and volume.
+      - autoplay: Requests the browser to play the audio automatically.
+      - loop: Repeats the audio when it finishes.
+      - muted: Mutes the audio by default.
+      - <source>: Specifies alternative audio sources and their formats.
+    -->
+
+    <h1>Audio</h1>
+
+    <!-- <audio src="./audio/Alnas.mp3" controls autoplay></audio> -->
+    <!-- <audio src="./audio/Alnas.mp3" controls loop></audio> -->
+    <!-- <audio src="./audio/Alnas.mp3" controls muted></audio> -->
+
+    <audio controls>
+      <source src="./audio/Alnas.mp3" type="audio/mpeg" />
+      <source src="./audio/Alnas.ogg" type="audio/ogg" />
+      <p>Your browser doesn't support Audio</p>
+    </audio>
+  </body>
+</html>

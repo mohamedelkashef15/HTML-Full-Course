@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+    <!-- 
+      - textarea
+      - select
+        - option
+
+      - optgroup
+      - legend
+      - fieldset 
+    
+    -->
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" rows="5" cols="30"></textarea>
+      </div>
+
+      <div>
+        <label for="skills">Skills</label> <br />
+        <select name="skills" id="skills" multiple size="2">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js" selected>JS</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+
+      <div>
+        <select id="course" name="course">
+          <optgroup label="Frontend Development">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </optgroup>
+
+          <optgroup label="Backend Development">
+            <option value="nodejs">Node.js</option>
+            <option value="python">Python</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
+      </fieldset>
+    </form>
+  </body>
+</html>

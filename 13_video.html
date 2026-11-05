@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+  </head>
+  <body>
+    <!-- 
+      - <video>: Used to embed video files in a web page.
+      - src: Specifies the path to the video file.
+      - controls: Displays video controls, such as play, pause, and volume.
+      - autoplay: Requests the browser to play the video automatically.
+      - loop: Repeats the video when it finishes.
+      - muted: Mutes the video by default.
+      - <source>: Specifies alternative video sources and their formats.
+    -->
+    <h1>Video</h1>
+
+    <!-- <video src="./videos/landscape.mp4" width="400" controls autoplay></video> -->
+    <video src="./videos/landscape.mp4" width="400" controls loop muted></video>
+
+    <video controls width="400">
+      <source src="./videos/landscape.mp4" type="video/mp4" />
+      <source src="./videos/landscape.mov" type="video/mov" />
+      <p>Your browser doen't support this video</p>
+    </video>
+  </body>
+</html>

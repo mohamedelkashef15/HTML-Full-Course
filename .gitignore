@@ -1,0 +1,14 @@
+# Videos
+assets/videos/
+*.mp4
+*.mov
+
+# Audio
+assets/audio/
+*.mp3
+*.wav
+*.ogg
+*.m4a
+
+# macOS
+.DS_Store

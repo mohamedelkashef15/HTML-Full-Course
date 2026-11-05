@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Register for a programming course by completing the student registration form."
+    />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration Form</h1>
+      <p>Fill out the form below to register for a programming course.</p>
+    </header>
+
+    <hr />
+
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="full-name">Full Name:</label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" id="birth-date" name="birthDate" required />
+          </p>
+
+          <p>Gender:</p>
+
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Course Information</legend>
+
+          <p>
+            <label for="course">Choose a Course:</label>
+            <select id="course" name="course" required>
+              <option value="">-- Select a Course --</option>
+              <option value="html">HTML Fundamentals</option>
+              <option value="css">CSS Fundamentals</option>
+              <option value="javascript">JavaScript Fundamentals</option>
+              <option value="python">Python Fundamentals</option>
+            </select>
+          </p>
+
+          <p>Preferred Learning Time:</p>
+
+          <input
+            type="radio"
+            id="morning"
+            name="learningTime"
+            value="morning"
+            required
+          />
+          <label for="morning">Morning</label>
+
+          <input
+            type="radio"
+            id="evening"
+            name="learningTime"
+            value="evening"
+          />
+          <label for="evening">Evening</label>
+
+          <p>What are your interests?</p>
+
+          <input
+            type="checkbox"
+            id="frontend"
+            name="interests"
+            value="frontend"
+          />
+          <label for="frontend">Frontend Development</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="backend"
+            name="interests"
+            value="backend"
+          />
+          <label for="backend">Backend Development</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="problem-solving"
+            name="interests"
+            value="problem-solving"
+          />
+          <label for="problem-solving">Problem Solving</label>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <p>
+            <label for="experience">Previous Programming Experience:</label>
+          </p>
+
+          <textarea
+            id="experience"
+            name="experience"
+            rows="5"
+            cols="40"
+            placeholder="Tell us about your programming experience..."
+          ></textarea>
+
+          <p>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="accepted"
+              required
+            />
+            <label for="terms"> I agree to the terms and conditions. </label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+      </form>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>
+        <small>&copy; Student Registration Form</small>
+      </p>
+    </footer>
+  </body>
+</html>
