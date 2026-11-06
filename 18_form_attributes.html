@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Attributes</title>
+    <!-- 
+      - placeholder
+      - Minlength & Maxlength
+      - required
+      - readonly
+      - min & max
+      - multiple 
+      - selected
+      - checked
+      - size
+      - disabled
+    -->
+  </head>
+  <body>
+    <form>
+      <!-- <label for="username">Username</label> -->
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+        minlength="3"
+        maxlength="12"
+        required
+        size="30"
+      />
+
+      <br />
+      <br />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="mohamed@gmail.com"
+        readonly
+      />
+
+      <br />
+      <br />
+
+      <div>
+        <label for="age">Age</label> <br />
+        <input type="number" id="age" name="age" min="18" max="60" />
+      </div>
+      <br />
+      <div>
+        <label for="skills">Skills</label> <br />
+        <select name="skills" id="skills">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript" selected>JavaScript</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">I agree on the terms and conditions</label>
+      </div>
+
+      <br />
+
+      <button type="submit" id="register" disabled>Submit</button>
+    </form>
+
+    <script>
+      let terms = document.getElementById("terms");
+      let register = document.getElementById("register");
+
+      terms.addEventListener("change", function () {
+        register.disabled = !terms.checked;
+      });
+    </script>
+  </body>
+</html>
